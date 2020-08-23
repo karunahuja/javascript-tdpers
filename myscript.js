@@ -1,3 +1,6 @@
+
+
+
 var x;
 alert(x);
 
@@ -80,13 +83,15 @@ alert(y);
 
 
 function doit(chClass){
-var addClass=chClass.value;
-var object=document.getElementById("a");
-object.className=addClass;
-document.getElementById("a").style.color="red";
 
-var tag=document.getElementsByTagName("a");
-tag[0].style.color="yellow";
+var p1=document.getElementById("a");
+function percentPlus(price,pcMarkup,...args){
+  
+    let markup=price*(pcMarkup/100);
+    return price+markup;
+}
+
+p1.innerHTML+="Final price is"+(percentPlus(3,70,40));
 
 }
 

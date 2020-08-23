@@ -79,10 +79,10 @@ alert(y)
 
 
 function doit(x){
-    x=document.getElementById('output');
-    alert(x.id);
-    alert(x.innerHTML);
-
+    document.getElementById('output').innerText="Text Changed";
+    
+    document.getElementById('output').innerHTML="Hi"+"<br>"+"Karun";
+    
 }
 
 

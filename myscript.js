@@ -62,6 +62,7 @@ i=0;
 var x="";
 while(i<100){
     if(i==5){
+        i++;
         continue;
     }
     x+=i+" ";
@@ -70,18 +71,11 @@ while(i<100){
 alert(x);
 
 
-var x=["red","green","blue","yellow"];
-colors="";
-
-count:{
-colors+=x[0]+" ";
-colors+=x[1]+" ";
-break count;
-colors+=x[2]+" ";
-colors+=x[3]+" ";
-}
-
-alert(colors);
+var x="How is ur finest hHour";
+var y=x.substring(18,21);
+alert(y);
+var y=x.substr(18,4);
+alert(y)
 
 
 function myfunc1(){

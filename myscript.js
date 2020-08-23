@@ -17,6 +17,22 @@ alert(b);
 var x={make:"Ford",model:"Focus",year:"2019"};
 alert(x.year);
 
+var c=0;
+c+=1;
+alert(c);
+
+var x=10;
+x++;
+alert(x);
+
+var x=25;
+x=x%2;
+alert(x);
+
+var x="Hello";
+x=x+"There";
+alert(x);
+
 
 function myfunc1(){
 alert("button1");

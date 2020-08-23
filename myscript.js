@@ -75,7 +75,8 @@ var x="How is ur finest hHour";
 var y=x.substring(18,21);
 alert(y);
 var y=x.substr(18,4);
-alert(y)
+alert(y);
+
 
 
 function doit(chClass){
@@ -83,6 +84,10 @@ var addClass=chClass.value;
 var object=document.getElementById("a");
 object.className=addClass;
 document.getElementById("a").style.color="red";
+
+var tag=document.getElementsByTagName("a");
+tag[0].style.color="yellow";
+
 }
 
 

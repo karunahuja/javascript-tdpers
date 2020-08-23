@@ -79,10 +79,8 @@ alert(y)
 
 
 function doit(x){
-    document.getElementById('output').innerText="Text Changed";
-    
-    document.getElementById('output').innerHTML="Hi"+"<br>"+"Karun";
-    
+    var classes=document.getElementsByClassName("class1");
+    alert(classes[0].className+classes.length);
 }
 
 

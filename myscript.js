@@ -85,13 +85,15 @@ alert(y);
 function doit(chClass){
 
 var p1=document.getElementById("a");
-function percentPlus(price,pcMarkup,...args){
+function finalPrice(price,pcMarkup){
   
     let markup=price*(pcMarkup/100);
-    return price+markup;
+    
+    p1.innerHTML+=`Final price is ${markup}`;
+    if(pcMarkup>1)    
+        return finalPrice(price,--pcMarkup);
 }
-
-p1.innerHTML+="Final price is"+(percentPlus(3,70,40));
+finalPrice(2000,10);
 
 }
 

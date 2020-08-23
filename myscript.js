@@ -79,7 +79,8 @@ alert(y)
 
 
 function doit(x){
-    alert(x.value);
+    x=document.getElementById('output');
+    alert(x.id);
     alert(x.innerHTML);
 
 }

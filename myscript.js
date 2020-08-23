@@ -80,12 +80,9 @@ alert(y)
 
 function doit(chClass){
 var addClass=chClass.value;
-
 var object=document.getElementById("a");
-
 object.className=addClass;
-
-
+document.getElementById("a").style.color="red";
 }
 
 

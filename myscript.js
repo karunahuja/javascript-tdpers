@@ -49,6 +49,17 @@ else{
     alert("False");
 }
 
+for(var i=0;i<10;i+=2){
+    x+=i+" ";
+
+}
+alert(x);
+i=0;
+while(i<100){
+    x+=i+" ";
+    i++;
+}
+alert(x);
 
 function myfunc1(){
 alert("button1");

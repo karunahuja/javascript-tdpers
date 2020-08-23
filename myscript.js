@@ -78,9 +78,14 @@ var y=x.substr(18,4);
 alert(y)
 
 
-function doit(x){
-    var classes=document.getElementsByClassName("class1");
-    alert(classes[0].className+classes.length);
+function doit(chClass){
+var addClass=chClass.value;
+
+var object=document.getElementById("a");
+
+object.className=addClass;
+
+
 }
 
 

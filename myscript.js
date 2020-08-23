@@ -48,14 +48,22 @@ if(x==11||x==20){
 else{
     alert("False");
 }
-
-for(var i=0;i<10;i+=2){
+var x="";
+for(var i=0;i<10;i++){
+    if(i==5){
+        break;
+    }
     x+=i+" ";
+     
 
 }
 alert(x);
 i=0;
+var x="";
 while(i<100){
+    if(i==5){
+        continue;
+    }
     x+=i+" ";
     i++;
 }

@@ -69,6 +69,21 @@ while(i<100){
 }
 alert(x);
 
+
+var x=["red","green","blue","yellow"];
+colors="";
+
+count:{
+colors+=x[0]+" ";
+colors+=x[1]+" ";
+break count;
+colors+=x[2]+" ";
+colors+=x[3]+" ";
+}
+
+alert(colors);
+
+
 function myfunc1(){
 alert("button1");
 }

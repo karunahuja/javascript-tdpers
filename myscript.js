@@ -34,6 +34,22 @@ x=x+"There";
 alert(x);
 
 
+var x=20;
+if(x<=3){
+    alert("true");
+}
+else{
+    alert("False");
+}
+
+if(x==11||x==20){
+    alert("true");
+}
+else{
+    alert("False");
+}
+
+
 function myfunc1(){
 alert("button1");
 }

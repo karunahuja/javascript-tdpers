@@ -78,6 +78,13 @@ var y=x.substr(18,4);
 alert(y)
 
 
+function doit(x,y){
+    alert(x*y);
+
+}
+
+
+
 function myfunc1(){
 alert("button1");
 }

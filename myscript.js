@@ -78,8 +78,9 @@ var y=x.substr(18,4);
 alert(y)
 
 
-function doit(x,y){
-    alert(x*y);
+function doit(x){
+    alert(x.value);
+    alert(x.innerHTML);
 
 }
 

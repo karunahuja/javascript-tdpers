@@ -252,6 +252,29 @@ console.log(myArray.indexOf('plums'));
 let pos=myArray.indexOf('grapes');
 myArray.splice(pos,1);
 console.log(myArray.includes('plum'));
+myArray,sort();
+myArray.reverse();
+
+
+while(i<myArray.length){
+    i++;
+    p1.innerHTML+=myArray[i-1];
+}
+
+for(let i=0;i<myArray.length;i++){
+    p1.innerHTML+=myArray[i];
+}
+
+for (let i of myArray) {
+    p1.innerHTML(i);
+}
+
+function myFruits(value,index,arr){
+    p1.innerHTML+=value;
+}
+myArray.forEach(myFruits);
+
+
 
 do{
     i++;

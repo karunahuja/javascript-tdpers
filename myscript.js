@@ -237,3 +237,18 @@ switch(title){
 
 p1.innerHTML=`${bonus}`;
 
+//for loops:= for in ( iterating over objects), for of (iterating over array), normal for loop
+
+let i=0;
+let myArray=[
+    'apple',
+    'plum'
+]
+do{
+    i++;
+    if(i==1){
+        continue ;
+    }
+    p1.innerHTML+=`Karun`;
+}while(i<myArray.length);
+

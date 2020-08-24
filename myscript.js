@@ -85,7 +85,8 @@ alert(y);
 function doit(chClass){
 
 var p1=document.getElementById("a");
-function finalPrice(price,pcMarkup){
+
+let finalPrice=(price,pcMarkup)=>{
   
     let markup=price*(pcMarkup/100);
     
@@ -93,8 +94,8 @@ function finalPrice(price,pcMarkup){
     if(pcMarkup>1)    
         return finalPrice(price,--pcMarkup);
 }
-finalPrice(2000,10);
 
+finalPrice(2000,10);
 }
 
 

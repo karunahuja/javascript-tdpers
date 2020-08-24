@@ -242,8 +242,17 @@ p1.innerHTML=`${bonus}`;
 let i=0;
 let myArray=[
     'apple',
-    'plum'
+    'plum',
+    'grapes',
+    'watermelon'
 ]
+myArray.push('mango');
+myArray.pop();
+console.log(myArray.indexOf('plums'));
+let pos=myArray.indexOf('grapes');
+myArray.splice(pos,1);
+console.log(myArray.includes('plum'));
+
 do{
     i++;
     if(i==1){

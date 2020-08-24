@@ -92,7 +92,9 @@ alert("button1");
 }
 function demo(x){
 
-    document.getElementById("p1").innerHTML=`This is ${x}, the length is ${(x.length).toString().bold()}`;
+    let ss=x.toString().substring(2,5).replace('','powered');
+
+    document.getElementById("p1").innerHTML=`This is ${(x).toString().toUpperCase()}, the length is ${(x.length).toString().bold()}`;
 }
 
 

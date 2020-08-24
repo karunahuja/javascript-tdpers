@@ -187,5 +187,13 @@ alert("Button3");
 }
 
 
+//data types
+let truth=true;
+let employee=null;
+let days=undefined;
+let x=5;
+let name='karun';
+const COLOR='blue';
+
 
   

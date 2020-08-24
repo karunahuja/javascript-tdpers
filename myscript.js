@@ -90,11 +90,16 @@ function doit(chClass){
 function myfunc1(){
 alert("button1");
 }
-function myfunc2(){
-
-alert("button2");
-
-
+function myfunc2(x){
+    var answer=0;
+try{
+let scores=[4,9,2,5,7];
+answer=score[x];
+}
+catch{
+answer="Invalid data";
+}
+document.getElementById("p1").innerHTML=answer;
 }
 function myfunc3(){
 alert("Button3");

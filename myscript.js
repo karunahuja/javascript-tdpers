@@ -94,9 +94,40 @@ function demo(x){
 
     let ss=x.toString().substring(2,5).replace('','powered');
 
-    document.getElementById("p1").innerHTML=`This is ${(x).toString().toUpperCase()}, the length is ${(x.length).toString().bold()}`;
-}
+    let found=ss.search(/w/);
+    if(found!=-1){
+        
+        document.getElementById("p1").innerHTML=`This is ${(x).toString().toUpperCase()}, the length is ${(x.length).toString().bold()}`;
 
+    }
+    else{
+        return;
+
+    }
+
+  }
+
+  let found1=ss.match(/y/);
+
+  
+  document.getElementById("p1").innerHTML=found1.index;
+
+  document.getElementById("p1").innerHTML=found1.length;
+
+  let found2=ss.match(/y/ig); //i for uppercase or lowercase and g for all occurances 
+
+  let searchTerm=/by/;
+  let found3=searchTerm.test(ss); //will return true or false
+
+  let found4=searchTerm.exec(ss); //will return actual word
+
+
+  let num1=0b101;
+  let num2=47e2;
+  let num4='8.56';
+  let num3=Number.MAX_VALUE;
+  let num5=Number.parseInt(num4);
+  
 
 
 function myfunc3(){

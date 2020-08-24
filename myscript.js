@@ -146,6 +146,11 @@ p1.innerHTML=`${myRide2.color}`;
 
 p1.innerHTML=myRide.carDetails();
 
+Vehicle.prototype.model;
+myRide.model="Explorer";
+Vehicle.prototype.getMSRP=function(){
+    return `${this.make}`;
+}
 
 
 

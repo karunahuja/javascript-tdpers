@@ -200,3 +200,15 @@ let sYear=year.toString();
 
 let x=parseInt(sYear);
 
+let x=5;
+let y=10;
+let z=4;
+
+if(x<10&&y>50){
+    p1.innerHTML=!(x<10&&Y>50);
+}
+
+if(x<10 || ++z){
+
+    p1.innerHTML=z;
+}

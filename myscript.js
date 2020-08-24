@@ -195,5 +195,8 @@ let x=5;
 let name='karun';
 const COLOR='blue';
 
+let year=date.getFullYear();
+let sYear=year.toString();
 
-  
+let x=parseInt(sYear);
+

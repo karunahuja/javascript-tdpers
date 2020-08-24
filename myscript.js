@@ -132,6 +132,11 @@ function vehicle1(make,color,year){
     this.make=make;
     this.color=color;
     this.year=year;
+
+    this.carDetails=function(){
+        return `${this.year} ${this.make}`
+    }
+
 }
 
 let myRide=new Vehicle("Ford","White","2020");
@@ -139,8 +144,7 @@ let myRide1=new Vehicle("Bmw","Wh","2019");
 p1.innerHTML=`${myRide.make}`;
 p1.innerHTML=`${myRide2.color}`;
 
-
-
+p1.innerHTML=myRide.carDetails();
 
 
 

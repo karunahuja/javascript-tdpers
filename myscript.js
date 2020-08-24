@@ -212,3 +212,10 @@ if(x<10 || ++z){
 
     p1.innerHTML=z;
 }
+
+
+
+let title="CIO";
+p1.innerHTML=(title==="CIO")?`${title} receives bonus`:`No bonus`;
+
+

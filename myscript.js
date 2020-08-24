@@ -139,19 +139,28 @@ function vehicle1(make,color,year){
 
 }
 
-let myRide=new Vehicle("Ford","White","2020");
-let myRide1=new Vehicle("Bmw","Wh","2019");
+let myRide=new vehicle1("Ford","White","2020");
+let myRide1=new vehicle1("Bmw","Wh","2019");
 p1.innerHTML=`${myRide.make}`;
 p1.innerHTML=`${myRide2.color}`;
 
 p1.innerHTML=myRide.carDetails();
 
-Vehicle.prototype.model;
+vehicle1.prototype.model;
 myRide.model="Explorer";
-Vehicle.prototype.getMSRP=function(){
+vehicle1.prototype.getMSRP=function(){
     return `${this.make}`;
 }
 
+function SUV(size,passengers){
+    this.size=size;
+    this.passengers=passengers;
+}
+
+SUV.prototype=new Vehicle();
+let explorer=new SUV('Mid','6');
+explorer.make="Ford";
+explorer.cost=1220;
 
 
 function myfunc1(){

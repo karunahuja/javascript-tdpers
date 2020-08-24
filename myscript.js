@@ -118,9 +118,31 @@ let vehicle={
 cost(){
     return this.cost+(this.cost*0.5);
 }
+}
+for(let i in vehicle){
+    console.log(i+vehicle[i]);
 
 }
+
 p1.innerHTML=`${vehicle.aboutMe()},${vehicle.cost()}`;
+
+
+//class
+function vehicle1(make,color,year){
+    this.make=make;
+    this.color=color;
+    this.year=year;
+}
+
+let myRide=new Vehicle("Ford","White","2020");
+let myRide1=new Vehicle("Bmw","Wh","2019");
+p1.innerHTML=`${myRide.make}`;
+p1.innerHTML=`${myRide2.color}`;
+
+
+
+
+
 
 
 function myfunc1(){

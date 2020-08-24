@@ -133,7 +133,22 @@ function demo(x){
   let finCalc=new Finance();
   let num8=fincalc.FV(0.08,2000,36);
 
-  
+  var myMap=new Map();
+  myMap.set('crystal','clear');
+  myMap.set('8',null);
+  myMap.set('seven',7);
+  myMap.set(50,'cents');
+
+  myMap.forEach(function(item,key,mapObj){
+        p1.innerHTML+=key.toString()+"<br/>";
+    });
+
+let mySet=new Set();
+mySet.add('monday').add(56).add(true).add(undefined);
+p1.innerHTML+=mySet.size; 
+for(let myKey of mySet){
+    console.log(mykey);
+}  
 
 function myfunc3(){
 alert("Button3");

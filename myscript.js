@@ -274,7 +274,16 @@ function myFruits(value,index,arr){
 }
 myArray.forEach(myFruits);
 
+let myArray=[
+    ['apple','w1',10],
+    ['plum','w2',11],
+    ['grapes','w3',12],
+    ['watermelon','w4',13]
+]
 
+for(let i=0;i<myArray.length;i++){
+    p1.innerHTML+=myArray[i][0]+myArray[i][1]+myArray[i][2];
+}
 
 do{
     i++;

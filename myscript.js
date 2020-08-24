@@ -218,4 +218,22 @@ if(x<10 || ++z){
 let title="CIO";
 p1.innerHTML=(title==="CIO")?`${title} receives bonus`:`No bonus`;
 
+switch(title){
+    case "CIO":
+        bonus=5;
+        break;
+    case "No bonus":
+        bonus=4.0;
+        termExtended=false;
+        break;
+    case "CFO":
+        bonus=6.5;
+        break;
+    default:
+        bonus=2.5;
+
+    
+}
+
+p1.innerHTML=`${bonus}`;
 

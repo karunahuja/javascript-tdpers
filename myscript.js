@@ -127,8 +127,13 @@ function demo(x){
   let num4='8.56';
   let num3=Number.MAX_VALUE;
   let num5=Number.parseInt(num4);
-  
 
+  let num6=Math.random()*10;  //random betw 0 and 10
+  let num7=Math.sqrt(49);
+  let finCalc=new Finance();
+  let num8=fincalc.FV(0.08,2000,36);
+
+  
 
 function myfunc3(){
 alert("Button3");

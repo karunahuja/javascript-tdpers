@@ -160,6 +160,28 @@ async function simpleF(){
 simpleF();
 
 
+
+//variable Hoisting
+num1=6;
+p1.innerHTML=`${num1}`;
+var num1;
+
+//function Hoisting , hoisting not possible in classes
+p1.innerHTML=`${getNum()}`;
+ 
+function getNum1(){
+    return 6;
+}
+
+
+let x='123.45';
+console.log(x.padStart(10,'+'));
+y='123.45';
+console.log(y.padEnd(10));
+z='12345.67'
+console.log(z.padEnd(10,'-'));
+
+
 function myfunc3(){
 alert("Button3");
 }

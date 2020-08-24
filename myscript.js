@@ -86,17 +86,31 @@ function doit(chClass){
 
 var p1=document.getElementById("a");
 
-let finalPrice=(price,pcMarkup)=>{
-  
-    let markup=price*(pcMarkup/100);
+console.log(`Hello \n \t karun`);
+console.log(String.raw`Hello \n \t karun`);
+
+function divBythree(value,idx,args){
+    if(value%3==0){
+        return true;    }}
+
+        let nums=[62,151,4,11,33,43];
+        let byThree=nums.some(divBythree);
+        p1.innerHTML+=byThree;
     
-    p1.innerHTML+=`Final price is ${markup}`;
-    if(pcMarkup>1)    
-        return finalPrice(price,--pcMarkup);
 }
 
-finalPrice(2000,10);
-}
+let myDate=new Date();
+let inSevenDays=new Date();
+inSevenDays.setDate(myDate.getDate()+7);
+
+p1.innerHTML+=`${myDate},${inSevenDays}`;
+
+let x=Math.pow(4,2);
+
+p1.innerHTML+=`${myDate},${inSevenDays.toString().bold()}`;
+
+
+
 
 
 

@@ -149,6 +149,16 @@ p1.innerHTML+=mySet.size;
 for(let myKey of mySet){
     console.log(mykey);
 }  
+async function simpleF(){
+    let promise=new Promise(function(resolve,reject){
+      setTimeout(function(){resolve('Just executed');
+    },2000);});
+   // return Promise.resolve("Just executed");
+   showMe(await promise);
+}
+
+simpleF();
+
 
 function myfunc3(){
 alert("Button3");

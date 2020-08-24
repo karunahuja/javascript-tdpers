@@ -90,17 +90,13 @@ function doit(chClass){
 function myfunc1(){
 alert("button1");
 }
-function myfunc2(x){
-    var answer=0;
-try{
-let scores=[4,9,2,5,7];
-answer=score[x];
+function demo(x){
+
+    document.getElementById("p1").innerHTML=`This is ${x}, the length is ${(x.length).toString().bold()}`;
 }
-catch{
-answer="Invalid data";
-}
-document.getElementById("p1").innerHTML=answer;
-}
+
+
+
 function myfunc3(){
 alert("Button3");
 }

@@ -109,9 +109,18 @@ let x=Math.pow(4,2);
 
 p1.innerHTML+=`${myDate},${inSevenDays.toString().bold()}`;
 
+let vehicle={
+    make:"Ford",model:"BMW",year:"2015",cost:1000,
+    aboutMe(){
+       
+        return this.make+this.color+this.year
+    },
+cost(){
+    return this.cost+(this.cost*0.5);
+}
 
-
-
+}
+p1.innerHTML=`${vehicle.aboutMe()},${vehicle.cost()}`;
 
 
 function myfunc1(){

@@ -84,90 +84,17 @@ alert(y);
 
 function doit(chClass){
 
-var p1=document.getElementById("a");
-
-console.log(`Hello \n \t karun`);
-console.log(String.raw`Hello \n \t karun`);
-
-function divBythree(value,idx,args){
-    if(value%3==0){
-        return true;    }}
-
-        let nums=[62,151,4,11,33,43];
-        let byThree=nums.some(divBythree);
-        p1.innerHTML+=byThree;
-    
-}
-
-let myDate=new Date();
-let inSevenDays=new Date();
-inSevenDays.setDate(myDate.getDate()+7);
-
-p1.innerHTML+=`${myDate},${inSevenDays}`;
-
-let x=Math.pow(4,2);
-
-p1.innerHTML+=`${myDate},${inSevenDays.toString().bold()}`;
-
-let vehicle={
-    make:"Ford",model:"BMW",year:"2015",cost:1000,
-    aboutMe(){
-       
-        return this.make+this.color+this.year
-    },
-cost(){
-    return this.cost+(this.cost*0.5);
-}
-}
-for(let i in vehicle){
-    console.log(i+vehicle[i]);
 
 }
-
-p1.innerHTML=`${vehicle.aboutMe()},${vehicle.cost()}`;
-
-
-//class
-function vehicle1(make,color,year){
-    this.make=make;
-    this.color=color;
-    this.year=year;
-
-    this.carDetails=function(){
-        return `${this.year} ${this.make}`
-    }
-
-}
-
-let myRide=new vehicle1("Ford","White","2020");
-let myRide1=new vehicle1("Bmw","Wh","2019");
-p1.innerHTML=`${myRide.make}`;
-p1.innerHTML=`${myRide2.color}`;
-
-p1.innerHTML=myRide.carDetails();
-
-vehicle1.prototype.model;
-myRide.model="Explorer";
-vehicle1.prototype.getMSRP=function(){
-    return `${this.make}`;
-}
-
-function SUV(size,passengers){
-    this.size=size;
-    this.passengers=passengers;
-}
-
-SUV.prototype=new Vehicle();
-let explorer=new SUV('Mid','6');
-explorer.make="Ford";
-explorer.cost=1220;
-
 
 function myfunc1(){
 alert("button1");
 }
 function myfunc2(){
-alert("Button2");
+
+alert("button2");
+
+
 }
 function myfunc3(){
 alert("Button3");
